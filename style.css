@@ -1,0 +1,19 @@
+h1 span {
+    position: absolute;
+    font-family: monospace;
+    text-transform:lowercase;
+    top: 0;
+    left: 0;
+    offset: path('M-100 0 a 100 100 0,11 0 0.1') var(--c);
+  }
+  
+  h1 {
+    position: absolute;
+    top: calc(50% - .5em);
+    left: calc(50% - .5em);
+    animation: rotate 10s linear infinite;
+  }
+  
+  @keyframes rotate {
+    to { rotate: -1turn; }
+  }
